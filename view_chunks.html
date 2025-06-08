@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Chunks</title>
+</head>
+<body>
+    <h2>Indexed Chunks</h2>
+
+    <h3>Search Chunks</h3>
+    <form action="/search" method="post">
+        <input type="text" name="query" placeholder="Enter query" required>
+        <input type="submit" value="Search">
+    </form>
+
+    <h3>Chunks:</h3>
+    <ul>
+        {% for chunk, score in chunks %}
+        <li>{{ chunk }} (Similarity Score: {{ score }})</li>
+        {% endfor %}
+    </ul>
+    
+    <h3>Delete Chunks:</h3>
+    <form action="/delete_chunk" method="post">
+        <input type="text" name="chunk" placeholder="Enter chunk to delete" required>
+        <input type="submit" value="Delete">
+    </form>
+    
+    <a href="/upload">Upload Another File</a>
+</body>
+</html>
