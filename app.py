@@ -11,7 +11,7 @@ from langchain.docstore.document import Document
 from langchain_google_genai import ChatGoogleGenerativeAI
 import docx  
 
-GEMINI_API_KEY = "AIzaSyAVoTmOMIlTbV0vEJvnmyRDR-XomPYW-_0"
+GEMINI_API_KEY = "Enter your API_KEY "
 os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
 
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
