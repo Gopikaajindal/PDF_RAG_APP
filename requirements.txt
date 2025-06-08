@@ -1,0 +1,9 @@
+gradio
+faiss-cpu
+sentence-transformers
+langchain
+langchain-google-genai
+pdfplumber
+docx
+numpy
+requests
